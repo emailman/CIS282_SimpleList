@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String[] sandwiches =
-                {"Ham", "Turkey","Roast Beef","Salami","Italian Combo","Tuna","Liverwurst"};
+                {"Ham", "Turkey","Roast Beef","Salami","Italian Combo","Tuna","Liverwurst",
+                "BLT", "Ham and Cheese", "Turkey and Cheese", "Salami and Cheese"};
         ListAdapter listAdapter =
                 new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, sandwiches);
         ListView myListView = (ListView) findViewById(R.id.lvSandwiches);
@@ -35,5 +36,4 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
     }
-
 }
