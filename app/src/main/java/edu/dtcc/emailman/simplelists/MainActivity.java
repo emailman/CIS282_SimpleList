@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                         String sandwich = String.valueOf(adapterView.getItemAtPosition(i));
 
-                        TextView tvchoice = (TextView) findViewById(R.id.tvChoice);
-                        tvchoice.setText("Ordering one " + sandwich.toLowerCase() + " sandwich");
+                        TextView tvChoice = (TextView) findViewById(R.id.tvChoice);
+                        tvChoice.setText("Ordering one " + sandwich.toLowerCase() + " sandwich");
                     }
                 }
         );
